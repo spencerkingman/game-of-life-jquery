@@ -1,0 +1,26 @@
+{
+  "name": "game-of-life-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && node-sass ./scss -o ./css && exit 0",
+    "watch": "webpack --watch & node-sass --watch ./scss -o ./css",
+    "serve": "npm run watch & live-server"
+  },
+  "author": "Spencer Kingman <spencerkingman@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-latest": "^6.24.1",
+    "node-sass": "^4.5.3",
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    "connect": "^3.6.3",
+    "jquery": "^3.2.1",
+    "serve-static": "^1.12.4"
+  }
+}
